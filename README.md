@@ -2,7 +2,7 @@
 
 This script will calculate the strength of your password according to the following criteria:
 
-- length (12 or more charachters is considered long enough)
+- length (more than 12 charachters is considered long enough)
 - the use of both upper-case and lower-case letters (case sensitivity)
 - inclusion of one or more numerical digits
 - inclusion of special characters, such as @, #, $
@@ -25,7 +25,7 @@ $ python main.py
 ```bash
 Enter your password: ******
 
-Passwords strength is 6 out of 10
+Passwords strength is 6 out of 14
 
 < Exit
 ```
