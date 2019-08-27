@@ -3,7 +3,7 @@
 This script will calculate the strength of your password according to the following criteria:
 
 - length (more than 12 characters is considered long enough)
-- the use of both letters and digits letters
+- the use of both letters and digits
 - the use of both upper-case and lower-case letters (case sensitivity)
 - inclusion of special characters, such as @, #, $
 
