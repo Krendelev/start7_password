@@ -2,27 +2,27 @@ import urwid
 
 
 def has_digit(password):
-    return any(filter(lambda x: x.isdigit(), password))
+    return any(char.isdigit() for char in password)
 
 
 def has_letters(password):
-    return any(filter(lambda x: x.isalpha(), password))
+    return any(char.isalpha() for char in password)
 
 
 def has_upper_letters(password):
-    return any(filter(lambda x: x.isupper(), password))
+    return any(char.isupper() for char in password)
 
 
 def has_lower_letters(password):
-    return any(filter(lambda x: x.islower(), password))
+    return any(char.islower() for char in password)
 
 
 def has_symbols(password):
-    return any(filter(lambda x: not x.isalnum(), password))
+    return any(char for char in password if not char.isalnum())
 
 
 def has_not_only_symbols(password):
-    has_alphanum = any(filter(lambda x: x.isalnum(), password))
+    has_alphanum = any(char.isalnum() for char in password)
     return has_alphanum and has_symbols(password)
 
 
